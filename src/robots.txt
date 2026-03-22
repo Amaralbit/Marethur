@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.marethur.com.br/sitemap.xml
+
+# Bloquear arquivos desnecessários
+Disallow: /404.html

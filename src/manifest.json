@@ -1,0 +1,49 @@
+{
+  "name": "Marethur Transporte e Turismo",
+  "short_name": "Marethur",
+  "description": "Aluguel de vans e ônibus com motorista em Goiânia e todo o Brasil.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#d42b2b",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Solicitar Orçamento",
+      "short_name": "Orçamento",
+      "description": "Solicite um orçamento direto pelo WhatsApp",
+      "url": "/?action=orcamento",
+      "icons": [{"src": "logo.png", "sizes": "96x96"}]
+    },
+    {
+      "name": "Ligar Agora",
+      "short_name": "Ligar",
+      "description": "Ligue para a Marethur",
+      "url": "tel:+5562981532032"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "frota.jpeg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Frota Marethur"
+    }
+  ]
+}
