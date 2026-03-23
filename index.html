@@ -182,7 +182,7 @@
 
 /* Hero no modo claro */
 [data-theme="light"] .hero{
-  background:linear-gradient(160deg,rgba(10,10,20,.82) 0%,rgba(196,26,26,.55) 100%),url('') center/cover no-repeat fixed;
+  background:linear-gradient(160deg,rgba(10,10,20,.82) 0%,rgba(196,26,26,.55) 100%),url('src/onibus.png') center/cover no-repeat fixed;
 }
 [data-theme="light"] .hero-img-bg{opacity:.18}
 [data-theme="light"] .loader-fill{background:var(--red)}
@@ -1399,8 +1399,27 @@ section{position:relative}
 /* ── COMPARAÇÃO DE VEÍCULOS ── */
 
 /* ── RESPONSIVE ── */
-@media(max-width:900px){.nav-links{display:none}.hamburger{display:flex}}
-@media(max-width:768px){#acess-btn{display:none}}
+@media(max-width:1200px){.nav-links{display:none}.hamburger{display:flex}}
+/* ── NAV RESPONSIVO INTERMEDIÁRIO ── */
+
+/* Entre 1200px e 1400px: compactar um pouco */
+@media(max-width:1400px){
+  .nav-links{gap:1.2rem}
+  .nav-links a{font-size:.66rem;letter-spacing:.8px}
+  .nav-cta{padding:7px 14px!important;font-size:.66rem!important}
+  #navbar{padding:0 3%}
+}
+
+/* Entre 1200px e 1300px: compactar mais */
+@media(max-width:1300px){
+  .nav-links{gap:.9rem}
+  .nav-links a{font-size:.62rem;letter-spacing:.5px}
+  .nav-cta{padding:6px 12px!important;font-size:.62rem!important}
+  .nav-right{gap:.5rem}
+  .nav-social a{width:28px;height:28px}
+}
+
+@media(max-width:1200px){#acess-btn{display:none}}
 @media(max-width:600px){section{padding:70px 5%}.hero{padding:120px 5% 80px}.hero-btns{flex-direction:column}.hero-img-bg{width:100%;clip-path:none;opacity:.08}.share-bar{gap:.4rem}}
 
 /* ── SEÇÃO ATENDIMENTO INLINE ── */
