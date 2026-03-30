@@ -330,9 +330,12 @@
 .theme-btn:hover{background:var(--red);border-color:var(--red);transform:rotate(20deg)}
 .theme-btn svg{width:15px;height:15px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;transition:stroke .2s}
 .theme-btn:hover svg{stroke:#fff}
-/* contador visitas */
 
-50%{opacity:.4;transform:scale(1.5)}}
+/* contador visitas */
+@keyframes visitPulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.4;transform:scale(1.5)}
+}
 
 /* flip counter */
 
@@ -395,7 +398,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--off);over
 .nav-cta:hover{background:var(--red2)!important;transform:translateY(-1px)!important}
 .nav-cta::after{display:none!important}
 .nav-cta.ativo{color:#fff!important}
-.nav-right{display:flex;align-items:center;gap:.8rem}
+.nav-right{display:flex;padding-left: 15px;align-items:center;gap:.8rem}
 .nav-social{display:flex;gap:.4rem}
 .nav-social a{width:32px;height:32px;border-radius:50%;background:var(--bg3);border:1px solid var(--dim);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s;text-decoration:none}
 .nav-social a:hover{background:var(--red);border-color:var(--red)}
@@ -1641,7 +1644,7 @@ html, body {
     <li><a href="#depoimentos">Depoimentos</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#atendimento">Atendimento</a></li>
-    <li><a href="#orcamento" class="nav-cta">Solicitar Orçamento</a></li>
+    <li><a href="#orcamento" class="nav-cta">Orçamento</a></li>
   </ul>
   <div class="nav-right">
     <div class="nav-social">
